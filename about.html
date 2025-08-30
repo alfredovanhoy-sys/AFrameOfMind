@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AFrameOfMind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>AFrameOfMind</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>About AFrameOfMind</h1>
+                <p>Discover the story behind our mountain retreat sanctuary</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-block">
+                        <h2>Our Story</h2>
+                        <p>AFrameOfMind was born from a simple desire to create the perfect escape from the hustle and bustle of everyday life. Nestled in the heart of pristine mountain wilderness, our cozy cabins offer a unique blend of rustic charm and modern comfort that allows guests to truly disconnect and recharge.</p>
+                        
+                        <p>Founded in 2018 by nature enthusiasts Sarah and Michael Thompson, AFrameOfMind began as a personal retreat that friends and family couldn't stop talking about. What started as a single A-frame cabin has grown into a collection of thoughtfully designed retreats, each offering its own unique character while maintaining the core values of tranquility, comfort, and connection with nature.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Our Mission</h2>
+                        <p>We believe that everyone deserves a place to find peace, whether you're seeking a romantic getaway, a solo retreat for reflection, or quality time with loved ones away from digital distractions. Our mission is to provide a sanctuary where guests can reconnect with nature, with each other, and with themselves.</p>
+                        
+                        <p>Each cabin is carefully positioned to maximize privacy while offering stunning views of the surrounding forest. We've thoughtfully integrated modern amenities like hot tubs, fireplaces, and high-quality furnishings without compromising the natural beauty that makes our location so special.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>What Makes Us Special</h2>
+                        <p>Our cabins feature:</p>
+                        <ul>
+                            <li>Private hot tubs with forest views</li>
+                            <li>Cozy fireplaces for evening relaxation</li>
+                            <li>Fully equipped kitchens with modern appliances</li>
+                            <li>Comfortable bedding and luxury linens</li>
+                            <li>Easy access to hiking trails and nature walks</li>
+                            <li>Complete privacy and seclusion</li>
+                            <li>Sustainable and eco-friendly practices</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>The Experience</h2>
+                        <p>From the moment you arrive, you'll feel the stress of daily life melting away. Wake up to the sound of birds singing, enjoy your morning coffee on a private deck surrounded by towering trees, and spend your days exploring miles of pristine hiking trails that wind through old-growth forest.</p>
+                        
+                        <p>Evenings are for relaxation – soak in your private hot tub under a canopy of stars, gather around the fireplace with a good book, or simply enjoy the profound silence that can only be found in nature. Our cabins are designed to help you slow down, breathe deeply, and remember what truly matters.</p>
+                    </div>
+
+                    <div class="content-block">
+                        <h2>Commitment to Nature</h2>
+                        <p>We're committed to preserving the natural beauty that makes our location so special. All of our cabins are built using sustainable materials and practices, and we work closely with local conservation groups to protect the surrounding ecosystem. We believe that luxury and environmental responsibility can go hand in hand.</p>
+                        
+                        <p>Our guests often tell us that their stay at AFrameOfMind has rekindled their appreciation for the natural world and inspired them to live more mindfully. This is exactly the kind of impact we hope to have – creating not just memorable vacations, but meaningful experiences that last long after you return home.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AFrameOfMind</h3>
+                <p>Your perfect mountain retreat awaits. Experience the tranquility of nature with modern comforts.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@aframeofmind.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AFrameOfMind. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.querySelector('.nav-menu');
+
+        mobileMenu.addEventListener('click', function() {
+            mobileMenu.classList.toggle('is-active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            mobileMenu.classList.remove('is-active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
+
